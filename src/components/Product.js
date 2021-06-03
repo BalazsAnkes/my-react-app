@@ -3,9 +3,11 @@ import Tabs from './Tabs';
 
 const Product = () => {
     const tabItems = [{
-        label: 'description'
+        label: 'description',
+        contentId: 1
     }, {
-        label: 'details'
+        label: 'details',
+        contentId: 2
     }];
 
     return (

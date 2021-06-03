@@ -7,7 +7,7 @@ const Tabs = ({ items }) => {
     return (
         <>
           {items.map((item, index) =>  (
-              <button key={index} className="btn btn-borderless">{t(item.label)}</button>
+              <button key={index} data-content_id={item.contentId} className="btn btn-borderless">{t(item.label)}</button>
           ))}
         </>
     )
@@ -15,7 +15,8 @@ const Tabs = ({ items }) => {
 
 Tabs.propTypes = {
     items: PropTypes.arrayOf(PropTypes.exact({
-        label: PropTypes.string
+        label: PropTypes.string,
+        contentId: PropTypes.number
     }))
 };
 
