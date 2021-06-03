@@ -5,10 +5,10 @@ const Navigation = () => {
 
     return (
         <nav>
-            <a>
-                <img src="images/arrow_left_24dp.svg" />
+            <button>
+                <img src="images/arrow_left_24dp.svg" alt="arrow_left"/>
                 <span>{t('allProducts')}</span>
-            </a>
+            </button>
         </nav>
     )
 };
