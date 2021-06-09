@@ -1,12 +1,16 @@
+import { useState } from 'react';
 import Navigation from './components/Navigation';
-import Product from './components/Product';
+import ProductDetails from './components/ProductDetails';
 import './App.css';
+import { defaultState } from './state/index';
 
 function App() {
+  const [state, setState] = useState(defaultState);
+
   return (
     <div className="App">
       <Navigation />
-      <Product />
+      <ProductDetails details={state}/>
     </div>
   );
 }
