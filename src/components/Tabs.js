@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
-const Tabs = ({ items }) => {
+const Tabs = ({ items, onDetailChange }) => {
     const { t } = useTranslation();
 
     return (
         <>
           {items.map((item, index) =>  (
-              <button key={index} data-content_id={item.contentId} className="btn btn-borderless">{t(item.label)}</button>
+              <button key={index} onClick={() => (onDetailChange(item.contentId))} className="btn btn-borderless">{t(item.label)}</button>
           ))}
         </>
     )

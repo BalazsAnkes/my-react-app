@@ -2,10 +2,11 @@ import { useState } from 'react';
 import Navigation from './components/Navigation';
 import ProductDetails from './components/ProductDetails';
 import './App.css';
-import { defaultState, activeState } from './state/index';
+import { defaultState, activeState, setDetail } from './state/index';
 
 function App() {
   const [currentState, setActiveState] = useState(activeState);
+  const onDetailChange = setDetail(setActiveState)(currentState);
 
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       <ProductDetails 
         details={defaultState}
         currentDetails={currentState}
+        onDetailChange={(contentId) => onDetailChange(contentId)}
       />
     </div>
   );

@@ -25,4 +25,11 @@ export const defaultState = {
 export const activeState = {
     tabContentId: defaultState.tabContents[0].id,
     image: defaultState.colors[0].image
-}
+};
+
+export const setDetail = (setState) => (currentState) => (contentId) => {
+    setState({
+        ...currentState,
+        tabContentId: contentId
+    });
+};
