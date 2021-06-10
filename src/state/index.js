@@ -33,3 +33,10 @@ export const setDetail = (setState) => (currentState) => (contentId) => {
         tabContentId: contentId
     });
 };
+
+export const setImage = (setState) => (currentState) => (image) => {
+    setState({
+        ...currentState,
+        image
+    });
+};
