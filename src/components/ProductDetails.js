@@ -10,6 +10,9 @@ const ProductDetails = ({ details, currentDetails, onDetailChange, onColorChange
             <Tabs items={details.tabItems} onDetailChange={onDetailChange} />
             <TabContent contents={details.tabContents} contentId={currentDetails.tabContentId} />
             <ColorSelect colors={details.colors} selectedImage={currentDetails.image} onColorChange={onColorChange}/>
+            <section className="image">
+                <img src={`images/${currentDetails.image}`}></img>
+            </section>
         </div>
     );
 };
