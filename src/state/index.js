@@ -6,11 +6,11 @@ export const defaultState = {
         label: 'details',
         contentId: 2
     }],
-    tabContent: [{
-        contentId: 1,
+    tabContents: [{
+        id: 1,
         content: 'product.description'
     }, {
-        contentId: 2,
+        id: 2,
         content: 'product.details'
     }],
     colors: [{
@@ -21,3 +21,8 @@ export const defaultState = {
         image: 'ath-msr7-brown.jpg'
     }]
 };
+
+export const activeState = {
+    tabContentId: defaultState.tabContents[0].id,
+    image: defaultState.colors[0].image
+}
