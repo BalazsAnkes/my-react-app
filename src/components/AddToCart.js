@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 
 const AddToCart = ({ state, onAddToCart }) => {
     const { t } = useTranslation();
-    const onClick = () => {
+    const wait = (delay) => (new Promise(resolve => {
+        setTimeout(resolve, delay);
+    }));
+    const onClick = async () => {
         onAddToCart({ label: 'button.loading', disabled: true });
-        setTimeout(() => {
-            onAddToCart({ label: 'button.viewCart', disabled: false });
-        }, 2000);
+        await wait(2000);
+        onAddToCart({ label: 'button.viewCart', disabled: false });
     };
 
     return (
