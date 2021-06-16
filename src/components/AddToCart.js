@@ -1,11 +1,9 @@
 import { useTranslation } from "react-i18next";
 import PropTypes from 'prop-types';
+import { wait } from '../utils/index';
 
 const AddToCart = ({ state, onAddToCart }) => {
     const { t } = useTranslation();
-    const wait = (delay) => (new Promise(resolve => {
-        setTimeout(resolve, delay);
-    }));
     const onClick = async () => {
         onAddToCart({ label: 'button.loading', disabled: true });
         await wait(2000);
