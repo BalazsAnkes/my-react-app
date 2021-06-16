@@ -17,7 +17,8 @@ Tabs.propTypes = {
     items: PropTypes.arrayOf(PropTypes.exact({
         label: PropTypes.string,
         contentId: PropTypes.number
-    }))
+    })),
+    onDetailChange: PropTypes.func
 };
 
 export default Tabs;

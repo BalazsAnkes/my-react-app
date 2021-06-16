@@ -12,6 +12,10 @@ const TabContent = ({ contents, contentId }) => {
 };
 
 TabContent.propTypes = {
+    contents: PropTypes.arrayOf(PropTypes.exact({
+        id: PropTypes.number,
+        content: PropTypes.string
+    })),
     contentId: PropTypes.number
 };
 

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import PropTypes from 'prop-types';
 
 const ColorSelect = ({ colors, selectedImage, onColorChange }) => {
     const { t } = useTranslation();
@@ -14,6 +15,15 @@ const ColorSelect = ({ colors, selectedImage, onColorChange }) => {
           ))}
         </select>
     );
+};
+
+ColorSelect.propTypes = {
+    colors: PropTypes.arrayOf(PropTypes.exact({
+        image: PropTypes.string,
+        label: PropTypes.string
+    })),
+    selectedImage: PropTypes.string,
+    onColorChange: PropTypes.func
 };
 
 export default ColorSelect;
