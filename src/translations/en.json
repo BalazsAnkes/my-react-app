@@ -9,5 +9,10 @@
         "details": "Curabitur rhoncus mauris lectus. Donec posuere dapibus ipsum eu ullamcorper. Vivamus congue luctus turpis, eu convallis urna tempor eu. Vivamus sem magna, sollicitudin ac dolor id, pulvinar luctus nunc. Integer eu iaculis velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ut pharetra metus. Praesent et libero orci. Vestibulum viverra pretium justo, sit amet tristique tortor dictum quis. Donec rutrum felis id purus porttitor, ac condimentum tellus fringilla. In imperdiet convallis dolor, maximus ultrices felis eleifend id. Etiam vehicula ultricies velit et dapibus. Sed quis venenatis ligula, nec eleifend turpis."
     },
     "description": "Description",
-    "details": "Details"
+    "details": "Details",
+    "colors": {
+        "label": "colors",
+        "black": "black",
+        "brown": "brown"
+    }
 }

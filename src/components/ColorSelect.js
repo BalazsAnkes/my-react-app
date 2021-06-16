@@ -9,11 +9,14 @@ const ColorSelect = ({ colors, selectedImage, onColorChange }) => {
     };
 
     return (
-        <select defaultValue={selectedImage} onChange={onChange} className="select">
-            {colors.map((color, index) =>  (
-              <option key={index} value={color.image}>{t(color.label)}</option>
-          ))}
-        </select>
+        <>
+            <label htmlFor="color-select">{t('colors.label')}</label>
+            <select id="color-select" defaultValue={selectedImage} onChange={onChange} className="select">
+                {colors.map((color, index) =>  (
+                <option key={index} value={color.image}>{t(`colors.${color.label}`)}</option>
+            ))}
+            </select>
+        </>
     );
 };
 
