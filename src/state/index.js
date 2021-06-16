@@ -24,7 +24,11 @@ export const defaultState = {
 
 export const activeState = {
     tabContentId: defaultState.tabContents[0].id,
-    image: defaultState.colors[0].image
+    image: defaultState.colors[0].image,
+    addToCartButton: {
+        label: 'button.addToCart',
+        disabled: false
+    }
 };
 
 export const setDetail = (setState) => (currentState) => (contentId) => {
@@ -40,3 +44,13 @@ export const setImage = (setState) => (currentState) => (image) => {
         image
     });
 };
+
+export const setAddToCartButton = (setState) => (currentState) => ({ label, disabled }) => {
+    setState({
+        ...currentState,
+        addToCartButton: {
+            label,
+            disabled
+        }
+    })
+}

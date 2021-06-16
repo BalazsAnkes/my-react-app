@@ -14,5 +14,10 @@
         "label": "colors",
         "black": "black",
         "brown": "brown"
+    },
+    "button": {
+        "addToCart": "Add to cart",
+        "loading": "Loading...",
+        "viewCart": "View cart"
     }
 }
