@@ -4,6 +4,8 @@ import './index.css';
 import './i18n';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './fonts/OpenSans-Regular.ttf';
+import './fonts/OpenSans-Bold.ttf';
 
 ReactDOM.render(
   <React.StrictMode>
