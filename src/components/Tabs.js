@@ -7,7 +7,7 @@ const Tabs = ({ items, onDetailChange }) => {
     return (
         <>
           {items.map((item, index) =>  (
-              <button key={index} onClick={() => (onDetailChange(item.contentId))} className="btn btn-borderless">{t(item.label)}</button>
+              <button key={index} onClick={() => (onDetailChange(item.contentId))} className="btn btn--borderless">{t(item.label)}</button>
           ))}
         </>
     )

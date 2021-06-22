@@ -13,14 +13,23 @@ function App() {
 
   return (
     <div className="App">
-      <Navigation />
-      <ProductDetails 
-        details={defaultState}
-        currentDetails={currentState}
-        onDetailChange={(contentId) => onDetailChange(contentId)}
-        onColorChange={(image) => onColorChange(image)}
-      />
-      <AddToCart state={currentState.addToCartButton} onAddToCart={onAddToCartClick}/>
+      <nav className="navigation">
+        <Navigation />
+      </nav>
+      <section className="main-content">
+        <ProductDetails
+          details={defaultState}
+          currentDetails={currentState}
+          onDetailChange={(contentId) => onDetailChange(contentId)}
+          onColorChange={(image) => onColorChange(image)}
+        />
+      </section>
+      <section className="image">
+          <img src={`images/${currentState.image}`} alt={currentState.image}></img>
+      </section>
+      <section className="cta-group">
+        <AddToCart state={currentState.addToCartButton} onAddToCart={onAddToCartClick}/>
+      </section>
     </div>
   );
 }
