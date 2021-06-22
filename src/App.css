@@ -27,6 +27,11 @@ body {
   padding: 8px;
 }
 
+.btn img {
+  height: 24px;
+  width: 24px;
+}
+
 .btn:hover {
   background-color: #eee;
 }
@@ -34,6 +39,15 @@ body {
 .btn--borderless {
   background: none;
   border: 0;
+}
+
+.btn--with-icon {
+  align-items: center;
+  display: inline-flex;
+}
+
+.btn--with-icon span {
+  margin-left: 4px;
 }
 
 .image img {
