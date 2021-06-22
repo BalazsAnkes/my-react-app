@@ -8,7 +8,9 @@ import Price from './Price';
 const ProductDetails = ({ details, currentDetails, onDetailChange, onColorChange }) => {
     return (
         <>
-            <Header />
+            <header className="product-header">
+                <Header />
+            </header>
             <Tabs items={details.tabItems} onDetailChange={onDetailChange} />
             <TabContent contents={details.tabContents} contentId={currentDetails.tabContentId} />
             <ColorSelect colors={details.colors} selectedImage={currentDetails.image} onColorChange={onColorChange}/>
