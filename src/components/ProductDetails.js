@@ -11,8 +11,12 @@ const ProductDetails = ({ details, currentDetails, onDetailChange, onColorChange
             <header className="product-header">
                 <Header />
             </header>
-            <Tabs items={details.tabItems} onDetailChange={onDetailChange} />
-            <TabContent contents={details.tabContents} contentId={currentDetails.tabContentId} />
+            <section className="product-description">
+                <div className="tab-group">
+                    <Tabs items={details.tabItems} activeContentId={currentDetails.tabContentId} onDetailChange={onDetailChange} />
+                </div>
+                <TabContent contents={details.tabContents} contentId={currentDetails.tabContentId} />
+            </section>
             <ColorSelect colors={details.colors} selectedImage={currentDetails.image} onColorChange={onColorChange}/>
             <section className="price">
                 <Price currentPrice={59.99} oldPrice={89.99} currency="USD" />
