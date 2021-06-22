@@ -6,7 +6,7 @@ const Navigation = () => {
     return (
         <button className="btn btn--borderless">
             <img src="images/arrow_left_24dp.svg" alt="arrow_left"/>
-            <span>{t('allProducts')}</span>
+            <span>{t('navigation.allProducts')}</span>
         </button>
     )
 };
