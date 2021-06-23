@@ -7,6 +7,7 @@
 body {
   color: #555;
   font-family: "Open Sans";
+  font-size: 14px;
   margin: 0;
 }
 
@@ -57,7 +58,7 @@ body {
 
 .btn--tab {
   border-radius: 0;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: bold;
   margin-right: 32px;
   position: relative;
@@ -90,14 +91,14 @@ body {
 }
 
 .product-header h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: bold;
   letter-spacing: 1px;
   margin: 4px 0;
 }
 
 .product-header h2 {
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: bold;
   color: #ccc;
   margin: 4px 0;
@@ -105,6 +106,10 @@ body {
 
 .product-description {
   margin-top: 48px;
+}
+
+.product-description p {
+  margin: 32px 0;
 }
 
 .tab-group {
@@ -119,6 +124,18 @@ body {
   left: -32px;
   right: -32px;
   position: absolute;
+}
+
+.price {
+  font-size: 1.8em;
+  font-weight: bold;
+  display: inline;
+  margin-right: 24px;
+}
+
+.price--old {
+  color: #ccc;
+  text-decoration: line-through;
 }
 
 @media only screen and (min-width: 768px) {
@@ -146,5 +163,20 @@ body {
 
   .cta-group {
     grid-area: cta-group;
+  }
+
+  .navigation,
+  .main-content,
+  .cta-group {
+    padding: 16px 48px;
+  }
+
+  .tab-group::after {
+    left: -48px;
+    right: -48px;
+  }
+
+  .product-description p {
+    margin: 40px 0;
   }
 }
