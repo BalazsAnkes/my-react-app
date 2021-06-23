@@ -20,7 +20,9 @@ const ProductDetails = ({ details, currentDetails, onDetailChange, onColorChange
             <section className="price-group">
                 <Price currentPrice={59.99} oldPrice={89.99} currency="USD" />
             </section>
-            <ColorSelect colors={details.colors} selectedImage={currentDetails.image} onColorChange={onColorChange}/>
+            <section className="color-select-group">
+                <ColorSelect colors={details.colors} selectedImage={currentDetails.image} onColorChange={onColorChange}/>
+            </section>
         </>
     );
 };

@@ -138,6 +138,25 @@ body {
   text-decoration: line-through;
 }
 
+.color-select-group {
+  margin-top: 48px;
+}
+
+.color-select-group label {
+  display: block;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 8px;
+  padding: 8px 12px;
+  width: 128px;
+}
+
 @media only screen and (min-width: 768px) {
   .App {
     grid-template-columns: 1fr 1fr; 
@@ -178,5 +197,9 @@ body {
 
   .product-description p {
     margin: 40px 0;
+  }
+
+  .color-select-group {
+    margin-top: 64px;
   }
 }
