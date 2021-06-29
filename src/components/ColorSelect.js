@@ -10,7 +10,7 @@ const ColorSelect = ({ colors, selectedImage, onColorChange }) => {
     };
 
     return (
-        <div class="select-wrapper">
+        <div className="select-wrapper">
             <label htmlFor="color-select">{t('colors.label')}</label>
             <select id="color-select" defaultValue={selectedImage} onChange={onChange} className="select">
                 {colors.map((color, index) =>  (
