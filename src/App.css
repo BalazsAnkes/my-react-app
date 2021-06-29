@@ -149,12 +149,28 @@ body {
   text-transform: uppercase;
 }
 
+.select-wrapper {
+  position: relative;
+}
+
 .select {
-  border: 1px solid #ccc;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #aaa;
   border-radius: 4px;
   margin-top: 8px;
   padding: 8px 12px;
+  position: relative;
   width: 128px;
+  z-index: 2;
+}
+
+.icon-select-arrow {
+  fill: #999;
+  left: 104px;
+  position: absolute;
+  top: 31px;
+  transform: rotate(90deg);
 }
 
 @media only screen and (min-width: 768px) {

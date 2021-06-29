@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import PropTypes from 'prop-types';
+import IconSelectArrow from "./IconSelectArrow";
 
 const ColorSelect = ({ colors, selectedImage, onColorChange }) => {
     const { t } = useTranslation();
@@ -9,14 +10,15 @@ const ColorSelect = ({ colors, selectedImage, onColorChange }) => {
     };
 
     return (
-        <>
+        <div class="select-wrapper">
             <label htmlFor="color-select">{t('colors.label')}</label>
             <select id="color-select" defaultValue={selectedImage} onChange={onChange} className="select">
                 {colors.map((color, index) =>  (
                 <option key={index} value={color.image}>{t(`colors.${color.label}`)}</option>
             ))}
             </select>
-        </>
+            <IconSelectArrow />
+        </div>
     );
 };
 
