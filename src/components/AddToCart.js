@@ -11,7 +11,7 @@ const AddToCart = ({ state, onAddToCart }) => {
     };
 
     return (
-        <button disabled={state.disabled} onClick={onClick} className="btn btn--primary">
+        <button disabled={state.disabled} onClick={onClick} className="add-to-cart__btn btn btn--borderless btn--primary">
             {t(state.label)}
         </button>
     );
