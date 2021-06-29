@@ -91,6 +91,12 @@ body {
   padding: 1.6em 5em;
 }
 
+.image {
+  align-items: center;
+  display: flex;
+  padding: 16px;
+}
+
 .image img {
   width: 100%;
 }
@@ -104,6 +110,10 @@ body {
 .main-content,
 .cta-group {
   padding: 16px 32px;
+}
+
+.navigation button {
+  padding-left: 0;
 }
 
 .product-header h1 {
@@ -126,6 +136,7 @@ body {
 
 .product-description p {
   margin: 32px 0;
+  line-height: 1.8em;
 }
 
 .tab-group {
@@ -203,6 +214,7 @@ body {
   .image {
     border-left: 1px solid #eee;
     grid-area: image;
+    padding: 0;
   }
   
   .navigation {
@@ -222,6 +234,15 @@ body {
   .main-content,
   .cta-group {
     padding: 16px 48px;
+  }
+
+  .main-content {
+    padding-bottom: 40px;
+  }
+
+  .cta-group {
+    padding-bottom: 40px;
+    padding-top: 40px;
   }
 
   .tab-group::after {
