@@ -88,7 +88,8 @@ body {
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 1.6em 5em;
+  padding: 1.6em;
+  width: 232px;
 }
 
 .image {
