@@ -19,5 +19,6 @@
         "addToCart": "Add to cart",
         "loading": "Loading...",
         "viewCart": "View cart"
-    }
+    },
+    "itemAdded": "Item added to cart!"
 }

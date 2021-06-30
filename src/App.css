@@ -202,6 +202,10 @@ body {
   transform: rotate(90deg);
 }
 
+.success-msg {
+  color: #77dd77;
+}
+
 @media only screen and (min-width: 768px) {
   .App {
     grid-template-columns: 1fr 1fr; 
@@ -257,5 +261,10 @@ body {
 
   .color-select-group {
     margin-top: 64px;
+  }
+
+  .success-msg {
+    display: inline;
+    margin-left: 16px;
   }
 }
